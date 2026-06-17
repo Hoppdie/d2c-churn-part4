@@ -65,7 +65,7 @@ Response:
 {
   "status": "ok",
   "model_loaded": true,
-  "threshold": 0.4
+  "threshold": 0.35
 }
 ```
 
