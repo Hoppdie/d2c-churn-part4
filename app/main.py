@@ -21,7 +21,7 @@ app = FastAPI(
 # ── Load model and artifacts ─────────────────────────────────────────────────
 MODEL_PATH = os.getenv("MODEL_PATH", "model.pkl")
 FEATURE_COLS_PATH = os.getenv("FEATURE_COLS_PATH", "feature_cols.pkl")
-THRESHOLD = float(os.getenv("THRESHOLD", "0.40"))  # default; update after Part 3 run
+THRESHOLD = float(os.getenv("THRESHOLD", "0.35"))  # default; update after Part 3 run
 
 model = None
 feature_cols = None
