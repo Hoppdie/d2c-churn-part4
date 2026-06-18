@@ -59,7 +59,7 @@ def main(data_dir: str):
 
     # Evaluate on test
     probs = model.predict_proba(X_test)[:, 1]
-    threshold = 0.40
+    threshold = 0.35  # matches Part 3 selected threshold
     preds = (probs >= threshold).astype(int)
     cm = confusion_matrix(y_test, preds)
     tn, fp, fn, tp = cm.ravel()
